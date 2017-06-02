@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26510.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartPhotoLibrary.Azure.Functions", "SmartPhotoLibrary.Azure.Functions\SmartPhotoLibrary.Azure.Functions.csproj", "{9CDBA81E-275A-4225-8168-902F76783F23}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "SmartPhoto.Azure.Templates", "SmartPhoto.Azure.Templates\SmartPhoto.Azure.Templates.deployproj", "{55C2DBB7-28BB-42F5-BDD4-84836199CF6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CDBA81E-275A-4225-8168-902F76783F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CDBA81E-275A-4225-8168-902F76783F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CDBA81E-275A-4225-8168-902F76783F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CDBA81E-275A-4225-8168-902F76783F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55C2DBB7-28BB-42F5-BDD4-84836199CF6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55C2DBB7-28BB-42F5-BDD4-84836199CF6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55C2DBB7-28BB-42F5-BDD4-84836199CF6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55C2DBB7-28BB-42F5-BDD4-84836199CF6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

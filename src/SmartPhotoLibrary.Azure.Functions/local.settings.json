@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "AzureWebJobsDashboard": "",
+    "AppStorage": "[StorageConnection]",
+    "spusername": "[Username]",
+    "sppassword": "[Password]",
+    "spurl": "[SharePoint Site]",
+    "computervisionApiUrl": "https://eastus2.api.cognitive.microsoft.com/vision/v1.0",
+    "computervisionkey": "[Insert Your Key]"
+  }
+}
