@@ -200,11 +200,15 @@ namespace SmartPhotoLibrary.Azure.Functions
                         //We want to be a little selective with our tags so we're only going to
                         //add tags with a confidence level of greater then 75% (.75)
                         var tags = visionModel.tags.Where(t => t.confidence > .75M).Select(t => t.name).ToArray();
+                        var colors = new String[] { visionModel.color.dominantColorBackground, visionModel.color.dominantColorForeground };
 
 
                         fileItem["Tags"] = string.Join(",", tags);
                         fileItem["LastAnalyzed"] = DateTime.Now;
                         fileItem["Analyzed"] = true;
+                        fileItem["Inappropriate"] = visionModel.adult.isAdultContent || visionModel.adult.isRacyContent;
+                        fileItem["Colors"] = colors;
+
                         fileItem.Update();
 
                         clientContext.ExecuteQuery();
